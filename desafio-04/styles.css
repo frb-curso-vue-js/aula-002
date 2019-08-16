@@ -1,0 +1,42 @@
+#efeito {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+}
+
+.destaque {
+	background-color: red;
+	width: 200px !important;
+}
+
+.encolher {
+	background-color: gray;
+	width: 50px !important;
+}
+
+.cor1 {
+	color: purple;
+}
+
+.borda {
+	border: 1px solid rgb(0, 109, 128);
+}
+
+.classeusuario {
+	border: 5px dotted blue;
+}
+
+.borda2 {
+	border: 5px dashed rgb(163, 51, 145);
+}
+
+.testando {
+	color: rgb(55, 13, 206);
+}
+
+.barra {
+	height: 40px;
+	background-color: green;
+	border: 2px solid black;
+	width: 0%;
+}

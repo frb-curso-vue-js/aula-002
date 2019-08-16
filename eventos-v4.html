@@ -1,0 +1,32 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <p>{{contador}}</p>
+    <button v-on:click="adicionar(1, $event)">Somar 1</button>
+    <button v-on:click="adicionar(5, $event)">Somar 5</button>
+    <p v-on:mousemove="atualizarXY">Mouse: {{x}} e {{y}}
+        <span v-on:mousemove.stop.prevent>PARAR AQUI</span>
+    </p>
+    <a v-on:click.prevent href="http://google.com.br">Google</a>
+</div>
+
+<script>
+new Vue({
+	el: '#app',
+    data: {
+        contador: 0,
+        x: 0,
+        y: 0
+    },
+    methods: {
+        adicionar(qte, event) {
+            console.log(qte, event);
+            this.contador += qte;
+        },
+        atualizarXY(event){
+            this.x = event.clientX;
+            this.y = event.clientY;
+        }
+    }
+});
+</script>
